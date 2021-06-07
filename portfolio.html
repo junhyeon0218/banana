@@ -28,7 +28,10 @@
       </div>
 
     </header>
-
+    <img id="dotbanana1" src="./imgbox/smile.png" alt="">
+    <img id="dotbanana2" src="./imgbox/smile.png" alt="">
+    <img id="dotbanana3" src="./imgbox/dead.png" alt="">
+    <img id="dotbanana4" src="./imgbox/dead.png" alt="">
 
     <main class="portfoliomain">
       <div class="portfolio">
@@ -40,7 +43,7 @@
               <h3>첫번째 프로젝트</h3>
             </div>
             <div class="bottominfo">
-              <p>처음 개발해본 웹 페이지이다. 별다른 기능이 없다.</p>
+              <p>제작기간: 21.03 ~ 21.04</p>
               <a href="https://junhyeon0218.github.io/main/index.html" target="_blank">홈페이지 이동</a>
             </div>
           </div>
@@ -50,7 +53,7 @@
               <h3>두번째 프로젝트</h3>
             </div>
             <div class="bottominfo">
-              <p>팀프로젝트이다. 각 게임장르를 소개해주는 사이트다.</p>
+              <p>제작기간: 21.04 ~ 21.06</p>
               <a href="https://junhyeon0218.github.io/main/index.html" target="_blank">홈페이지 이동</a>
             </div>
           </div>
@@ -60,7 +63,7 @@
               <h3>세번째 프로젝트</h3>
             </div>
             <div class="bottominfo">
-              <p>테이블에 있던 바나나보고 바나나 테마로 만들어 보았다.</p>
+              <p>제작기간: 21.04 ~ 21.06</p>
             </div>
           </div>
 
@@ -74,13 +77,82 @@
           </div>
 
         </div>
+        <button id="myBtn6" class="modalbtn">관심분야 및 진행상황 보기</button>
       </div>
     </main>
 
+    <div id="myModal6" class="modal">
+      <div class="modal-content">
+        <span class="close close6">&times;</span>
+        <div class="modalmain">
+          <h1>관심분야 및 진행상황</h1>
+          <div class="portfoilomodal">
+            <button class="accordion">프론트엔드</button>
+            <div class="panel">
+              <div class="movebar">
+                <p>HTML</p>
+                <div class="big">
+                  <div class="small1"></div>
+                </div>
+              </div>
+              <div class="movebar">
+                <p>CSS</p>
+                <div class="big">
+                  <div class="small2"></div>
+                </div>
+              </div>
+              <div class="movebar">
+                <p>JS</p>
+                <div class="big">
+                  <div class="small3"></div>
+                </div>
+              </div>
+            </div>
+  
+            <button class="accordion">C 언어</button>
+            <div class="panel">
+              <div class="movebar">
+                <p>파이썬</p>
+                <div class="big">
+                  <div class="small3"></div>
+                </div>
+              </div>
+              <div class="movebar">
+                <p>자바</p>
+                <div class="big">
+                  <div class="small4"></div>
+                </div>
+              </div>
+              <div class="movebar">
+                <p>C++</p>
+                <div class="big">
+                  <div class="small5"></div>
+                </div>
+              </div>             
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal7" class="modal">
+      <div class="modal-content">
+        <span class="close close7">&times;</span>
+        <div class="modalmain modalmain123">
+          <h1>사이트기술소개</h1>
+          
+          <div class="modalimg">
+            <iframe src="https://www.youtube.com/embed/1rVQRqXTT3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <div class="copyright">
-        <p>Copyright ⓒ 2021 0218-MAIN. ALL RIGHTS RESERVED.</p>        
+        <p>Copyright ⓒ 2021 0218-MAIN. ALL RIGHTS RESERVED.<br>
+          <button id="myBtn7" class="modalbtn">사이트기술소개</button></p>        
       </div>
       <div class="bananachange">
         <p>바나나 색상 바꾸기</p>
@@ -88,9 +160,9 @@
       </div>
     </footer>
 
-
-
-
+    <script src="./sitemodal.js"></script>
+    <script src="./portfoilomodal.js"></script>
+    <script src="./accordion.js"></script>
     <script src="./java.js"></script>
 </body>
 </html>
