@@ -772,6 +772,11 @@ main{
   font-size: 1.3rem;
 }
 
+#ptype{
+  color: brown;
+  display: block;
+}
+
 #clickbanana{
   width: 30px;
   margin-left: 2%;
