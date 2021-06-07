@@ -36,6 +36,7 @@
 
 html{
   height: 100%;
+  cursor: url(./imgbox/cursor.cur), auto
 }
 
 body{
@@ -56,9 +57,6 @@ body{
 *{
   font-family: 'Jua', sans-serif;
 }
-
-
-
 
 /* --------header */
 
@@ -181,10 +179,18 @@ footer{
   justify-content: space-between;
 }
 
+* button{
+  cursor: url(./imgbox/cursor2.cur), auto;
+}
+
+* a{
+  cursor: url(./imgbox/cursor2.cur), auto;
+}
+
 .bananabtn{
   background: none;
   border: none;
-  cursor: pointer;
+  cursor: url(./imgbox/cursor2.cur), auto;
   font-size: 1rem;
 }
 
@@ -205,6 +211,42 @@ footer{
   transition: 0.3s;
 }
 
+
+.modalmain123{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modalmain1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modalmain p{
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.modallink{
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.modalmain p:hover{
+  background-color: rgb(93, 93, 93);
+  transition: 0.3s;
+}
+
+.modalmain p:hover a{
+  color: white;
+}
+
+.modalimg{
+  margin-top: 1%;
+}
 
 
 
@@ -314,7 +356,7 @@ main{
 .col{
   width: calc(25% - 2rem);
   margin: 1rem;
-  cursor: pointer;
+  cursor: url(./imgbox/cursor2.cur), auto;
 }
 
 .container{
@@ -486,7 +528,6 @@ main{
 .portfoliomain{
   height: 100%;
   display: flex;
-  align-items: center;
 }
 
 
@@ -501,14 +542,27 @@ main{
 .portfolio{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: flex-start;
   margin: 0 0 0 3%;
   width: 100%;
 }
 
+#myBtn6{
+  font-size: 2rem;
+  margin-left: 3%;
+  border: none;
+  background: none;
+  cursor: url(./imgbox/cursor2.cur), auto;
+}
+
+#btnbanana{
+  width: 30px;
+}
+
 .portfolio h1{
-  margin: 0 0 3% 0;
   font-size: 3.2rem;
+  margin-left: 3%;
 }
 
 .project{
@@ -521,6 +575,7 @@ main{
   justify-content: space-around;
   overflow-y: hidden;
   border-radius: 10px;
+  box-shadow: 3px 3px 10px black;
 }
 
 .project:nth-child(1){
@@ -542,7 +597,7 @@ main{
   background-size: cover;
 }
 .project:nth-child(4){
-  background: url('./imgbox/port.jpg');
+  background: url('./imgbox/project4.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -600,6 +655,94 @@ main{
   transform: translateY(0);
 }
 
+
+/* 아코디언 */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: url(./imgbox/cursor2.cur), auto;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.movebar{
+  margin: 20px;
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.big{
+  height: 10px;
+  width: 85%;
+  border-radius: 10px;
+}
+
+.small1{
+  width: 60%;
+  background: rgb(237, 206, 22);
+  height: 8px;
+  border-radius: 10px;
+}
+
+.small2{
+  width: 40%;
+  background: rgb(237, 206, 22);
+  height: 8px;
+  border-radius: 10px;
+}
+.small3{
+  width: 15%;
+  background: rgb(237, 206, 22);
+  height: 8px;
+  border-radius: 10px;
+}
+.small4{
+  width: 10%;
+  background: rgb(237, 206, 22);
+  height: 8px;
+  border-radius: 10px;
+}
+.small5{
+  width: 20%;
+  background: rgb(237, 206, 22);
+  height: 8px;
+  border-radius: 10px;
+}
+
+
+
+
 /* 팀프로젝트 */
 
 .teammain{
@@ -621,7 +764,7 @@ main{
 }
 
 .teamintro h1{
-  font-size: 3.2rem;
+  font-size: 2.5rem;
 }
 
 .introlist li{
@@ -629,11 +772,71 @@ main{
   font-size: 1.3rem;
 }
 
+#clickbanana{
+  width: 30px;
+  margin-left: 2%;
+  animation: rotate_image 15s linear infinite;
+}
+
+#dotbanana1{
+  width: 30px;
+  position: absolute;
+  animation: rotate_image 10s linear infinite;
+  left: 70%;
+  top: 30%;
+}
+
+#dotbanana2{
+  width: 30px;
+  position: absolute;
+  animation: rotate_image 4s linear infinite;
+  left: 20%;
+  bottom: 20%;;
+}
+
+#dotbanana3{
+  width: 30px;
+  position: absolute;
+  animation: rotate_image 12s linear infinite;
+  left: 90%;
+  bottom: 10%;;
+}
+
+#dotbanana4{
+  width: 30px;
+  position: absolute;
+  left: 4%;
+  top: 20%;
+  animation: rotate_image 16s linear infinite;
+}
+
+
 
 .introlist{
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#selectpage:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+  background: black;
+  border-radius: 10px;
+}
+
+#selectpage:hover a{
+  color: white;
+}
+
+
+#myBtn7{
+  border: none;
+  background: none;
+  cursor: url(./imgbox/cursor2.cur), auto;
 }
 
 
@@ -769,7 +972,7 @@ main{
 .close:focus {
   color: #000;
   text-decoration: none;
-  cursor: pointer;
+  cursor: url(./imgbox/cursor2.cur), auto;
 }
 
 .gameimg{
@@ -780,6 +983,28 @@ main{
   text-decoration: none;
   color: black;
 }
+
+.memberpage{
+  text-decoration: none;
+  color: white;
+}
+
+.modalimg{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 50%;
+}
+
+iframe{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
 
 
 
@@ -843,6 +1068,10 @@ main{
   .work p{
     font-size: 0.8rem;
   }
+
+  .introlist{
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 880px){
@@ -870,6 +1099,12 @@ main{
     flex-direction: column;
     width: 100%;
   }
+
+  .modalmain h1{
+    font-size: 1.6rem;
+  }
+
+
 
   .member{
     width: 130px;
@@ -931,11 +1166,17 @@ main{
   .navbox{
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10%;
+    border-bottom: 3px solid black;
+  }
+
+  footer{
+    margin-top: 5%;
   }
 
   .navbox li{
     font-size: 1.3rem;
-    padding: 0;
+    padding: 3px;
     margin: 0;
     font-weight: lighter;
   }
@@ -975,6 +1216,10 @@ main{
 
   #select{
     animation: none;
+  }
+
+  .movebar p{
+    width: 50px;
   }
 
 
